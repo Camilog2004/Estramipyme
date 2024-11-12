@@ -1,11 +1,11 @@
-//package controller;
+// package controller;
 
-//import model.Administrator;
-//import service.AdministratorService;
+//  import model.Administrator;
+// import service.AdministratorService;
 
-//import java.util.List;
+// import java.util.List;
 
-//public class AdministratorController {
+// public class AdministratorController {
 //    private AdministratorService service = new AdministratorService();
 
 //    public void createAdministrator(String id, String email, String password) {
