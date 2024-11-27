@@ -13,11 +13,11 @@ public class Administrator {
 
     @Id
     @Column(name = "id_administrator", length = 15)
-    private String idAdministrator;
+    private String id;
 
     @Column(name = "email_administrator", length = 99, nullable = false)
-    private String emailAdministrator;
+    private String email;
 
     @Column(name = "password_administrator", length = 20, nullable = false)
-    private String passwordAdministrator;
+    private String password;
 }

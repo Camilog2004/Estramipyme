@@ -36,7 +36,7 @@ public class ProjectService {
             return null;
         }
         Teacher teacher = teacherRepository.findById(project.getIdTeacher().getIdTeacher()).orElse(null);
-        Company company = companyRepository.findById(project.getIdCompany().getIdCompany()).orElse(null);
+        Company company = companyRepository.findById(project.getIdCompany().getId()).orElse(null);
 
         if(teacher == null || company == null) {
             return null;
@@ -52,7 +52,7 @@ public class ProjectService {
             return null;
         }
         Teacher teacher = teacherRepository.findById(project.getIdTeacher().getIdTeacher()).orElse(null);
-        Company company = companyRepository.findById(project.getIdCompany().getIdCompany()).orElse(null);
+        Company company = companyRepository.findById(project.getIdCompany().getId()).orElse(null);
 
         existingProject.setNameProject(project.getNameProject()==null ? existingProject.getNameProject() : project.getNameProject());
         existingProject.setIdTeacher(teacher==null ? existingProject.getIdTeacher() : teacher);

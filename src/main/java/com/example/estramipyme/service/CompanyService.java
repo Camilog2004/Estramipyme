@@ -23,6 +23,10 @@ public class CompanyService {
         return companyRepository.findById(id);
     }
 
+    public List<Company> findAllCompaniesByEmail(String email) {
+     return  companyRepository.findByEmail(email);
+    }
+
     public Company saveCompany(Company company) {
         return companyRepository.save(company);
     }
