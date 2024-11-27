@@ -14,11 +14,16 @@ public class AdministratorService {
 
     @Autowired
     private AdministratorRepository repository;
+    @Autowired
+    private AdministratorRepository administratorRepository;
 
     public Administrator createAdministrator(Administrator admin) {
         return repository.save(admin);
     }
 
+    public List<Administrator> findAllCompaniesByEmail(String email) {
+        return administratorRepository.findByEmail(email);
+    }
     public List<Administrator> getAllAdministrators() {
         return repository.findAll();
     }

@@ -21,33 +21,33 @@ public class Test {
     private Integer idTest;
 
     @Column(name = "question_1", length = 500, nullable = false)
-    private String question1;
+    private String pregunta1;
 
     @Column(name = "question_2", length = 500, nullable = false)
-    private String question2;
+    private String pregunta2;
 
     @Column(name = "question_3", length = 500, nullable = false)
-    private String question3;
+    private String pregunta3;
 
     @Column(name = "question_4", length = 500, nullable = false)
-    private String question4;
+    private String pregunta4;
 
     @Column(name = "question_5", length = 500, nullable = false)
-    private String question5;
+    private String pregunta5;
 
     @Column(name = "question_6", length = 500, nullable = false)
-    private String question6;
+    private String pregunta6;
 
     @Column(name = "question_7", length = 500, nullable = false)
-    private String question7;
+    private String pregunta7;
 
     @Column(name = "question_8", length = 500, nullable = false)
-    private String question8;
+    private String pregunta8;
 
     @Column(name = "question_9", length = 500, nullable = false)
-    private String question9;
+    private String pregunta9;
 
     @ManyToOne
     @JoinColumn(name = "id_company", nullable = false)
-    private Company company;
+    private Company id_empresa;
 }

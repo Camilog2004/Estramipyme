@@ -9,7 +9,8 @@ create table Company (
                          company_size varchar(1) not null,
                          company_field varchar(1) not null,
                          register_date_company date not null,
-                         download_book_company boolean not null
+                         download_book_company boolean not null,
+                         is_test_done boolean not null
 );
 create table Test (
                       id_test int not null primary key auto_increment,
